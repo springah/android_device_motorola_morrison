@@ -6,22 +6,6 @@ on early-init
     write /sys/devices/virtual/net/rmnet0/timeout 18000000
 
 on boot
-# unmap left alt to avoid console switch
-    setkey 0x0 0x38 0x0
-# reset SEND+MENU+END
-    setkey 0x0 0xe7 0x706
-    setkey 0x0 0x8b 0x707
-
-    setkey 0x40 0xe7 0x706
-    setkey 0x40 0x8b 0x707
-
-    setkey 0x80 0xe7 0x706
-    setkey 0x80 0x8b 0x707
-
-    setkey 0xc0 0xe7 0x706
-    setkey 0xc0 0x8b 0x707
-    setkey 0xc0 0x6b 0x20c
-
     chown radio system /sys/android_power/state
     chown radio system /sys/android_power/request_state
     chown radio system /sys/android_power/acquire_full_wake_lock

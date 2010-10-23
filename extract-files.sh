@@ -53,6 +53,7 @@ adb pull /system/etc/wifi/nvram.txt ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/etc/wifi/wpa_supplicant.conf ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/etc/dhcpcd/dhcpcd.conf ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/lib/egl/libGLES_android.so ../../../vendor/motorola/$DEVICE/proprietary/
+adb pull /system/lib/egl/libGLES_qcom.so ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/lib/hw/gralloc.msm7k.so ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/lib/hw/lights.msm7k.so ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/lib/hw/sensors.msm7k.so ../../../vendor/motorola/$DEVICE/proprietary/
@@ -87,7 +88,6 @@ adb pull /system/lib/libwmsts.so ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/lib/libtpa.so ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/lib/libtpa_core.so ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/lib/libuim.so ../../../vendor/motorola/$DEVICE/proprietary/
-adb pull /system/lib/libwjtpapi.so ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/usr/keychars/adp5588_morrison.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/usr/keychars/adp5588_morrison_P2.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary/
 adb pull /system/usr/keychars/headset.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary/
@@ -142,6 +142,7 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \\
     vendor/motorola/__DEVICE__/proprietary/dhcpcd.conf:/system/etc/dhcpcd/dhcpcd.conf \\
     vendor/motorola/__DEVICE__/proprietary/libGLES_android.so:/system/lib/egl/libGLES_android.so \\
+    vendor/motorola/__DEVICE__/proprietary/libGLES_qcom.so:/system/lib/egl/libGLES_qcom.so \\
     vendor/motorola/__DEVICE__/proprietary/libaudioeq.so:/system/lib/libaudioeq.so \\
     vendor/motorola/__DEVICE__/proprietary/libloc_api.so:/system/lib/libloc_api.so \\
     vendor/motorola/__DEVICE__/proprietary/libril-moto-umts-1.so:/system/lib/libril-moto-umts-1.so \\
@@ -176,7 +177,6 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/libtpa.so:/system/lib/libtpa.so \\
     vendor/motorola/__DEVICE__/proprietary/libtpa_core.so:/system/lib/libtpa_core.so \\
     vendor/motorola/__DEVICE__/proprietary/libuim.so:/system/lib/libuim.so \\
-    vendor/motorola/__DEVICE__/proprietary/libwjtpapi.so:/system/lib/libwjtpapi.so \\
     vendor/motorola/__DEVICE__/proprietary/adp5588_morrison.kcm.bin:/system/usr/keychars/adp5588_morrison.kcm.bin \\
     vendor/motorola/__DEVICE__/proprietary/headset.kcm.bin:/system/usr/keychars/headset.kcm.bin \\
     vendor/motorola/__DEVICE__/proprietary/adp5588_morrison_P2.kcm.bin:/system/usr/keychars/adp5588_morrison_P2.kcm.bin \\

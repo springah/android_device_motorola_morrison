@@ -90,7 +90,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/morrison/proprietary/libtpa.so:/system/lib/libtpa.so \
     vendor/motorola/morrison/proprietary/libtpa_core.so:/system/lib/libtpa_core.so \
     vendor/motorola/morrison/proprietary/libuim.so:/system/lib/libuim.so \
-    vendor/motorola/morrison/proprietary/libwjtpapi.so:/system/lib/libwjtpapi.so \
     vendor/motorola/morrison/proprietary/adp5588_morrison.kcm.bin:/system/usr/keychars/adp5588_morrison.kcm.bin \
     vendor/motorola/morrison/proprietary/headset.kcm.bin:/system/usr/keychars/headset.kcm.bin \
     vendor/motorola/morrison/proprietary/adp5588_morrison_P2.kcm.bin:/system/usr/keychars/adp5588_morrison_P2.kcm.bin \
